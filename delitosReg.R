@@ -1,6 +1,7 @@
 require(httr)
 library(jsonlite)
 library(dplyr)
+library(sf)
 
 delitosReg  <- function(nreg,año,id){
 
