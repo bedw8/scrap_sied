@@ -10,10 +10,15 @@ Los datos tienen acceso restringido. Para hacer uso de este código hay que inic
 
 ![](Readme_img/home.png)
 ![](Readme_img/1.png)
+
 2. Seleccionamos "Cookies"
 ![](Readme_img/2.png)
-3. Nos ubicamos en "siedt.spd.gov.cl" > "Cookies" > "ci_session"
+
+3. Nos ubicamos en `siedt.spd.gov.cl` > `Cookies` > `ci_session`
 ![](Readme_img/3.png)
+
 4. El valor en `Content` es nuestro identificador.
 
-## El código `main.R` muestra un ejemplo del uso de la función `delitosReg` donde el identificador es un parámetro.
+## Código de ejemplo.
+El código `main.R` muestra un ejemplo del uso de la función `delitosReg`. Los parámetros de esta son el número de la región, el año y el identificador.
+
