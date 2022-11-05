@@ -42,14 +42,16 @@ delitosReg  <- function(nreg,year,id){
         if (!str_detect(data,'(table|clock)')) {
           print(data)
 
+          output_name <- function(data,ext){ paste0('results/',year,'_R',nreg,'_',data,'.',ext)}
+
           if (c('x','y') %in% (df[[data]] %>% names) %>% prod()){
             df[[data]] %>%
               arrange(fecha,hora) %>%
               st_as_sf(coords = c("x","y"), crs = 4326) %>%
-              write_sf(paste0('results/',data,'_R',nreg,'_',year,'.gpkg'))
+              write_sf(output_name(data,'gpkg'))
           }
           else{
-            df[[data]] %>% write.csv(paste0('results/',data,'_R',nreg,'_',year,'.csv'),row.names = FALSE)
+            df[[data]] %>% write.csv(output_name(data,'csv'),row.names = FALSE)
           }
         }
       }
