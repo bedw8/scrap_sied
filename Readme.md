@@ -1,7 +1,6 @@
 # Scraping Delitos
 
-Este código permite obtener un objeto tipo `sf` con los delitos localizados. La solicitud se hace por región y por año.
-
+Este código permite datos con los delitos geolocalizados (GPKG). La solicitud se hace por región y por año. Además se descargan varios archivos, entre ellos resumenes estadisticos de la frecuencia de los delitos por categoría, fecha.
 ## Inicio de sesión
 
 Los datos tienen acceso restringido. Para hacer uso de este código hay que iniciar sesión en la página [https://siedt.spd.gov.cl/](https://siedt.spd.gov.cl/). Luego de esto hay que seguír los siguientes pasos para obtener el `id` de la sesión.
